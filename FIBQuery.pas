@@ -2054,8 +2054,6 @@ begin
     else
      vValue:=PAnsiString(aValue)^;
    end;
-   if Length(vValue)>32767 then
-    sSQLType:=SQL_BLOB;
     if (sSQLType = SQL_BLOB) then
     begin
       if FStreamValue=nil then
